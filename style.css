@@ -24,6 +24,8 @@ body{
 
 }
 
+/* navbar start  */
+
 nav.navbar{
     display:flex;
     justify-content:space-between;
@@ -53,6 +55,11 @@ nav.navbar{
     
 }
 
+/* Navbar end  */
+
+
+
+/* hero section start  */
 
 .hero{
     min-height:700px;
@@ -89,6 +96,12 @@ nav.navbar{
     font-size:18px;
 }
 
+/* hero section end  */
+
+
+
+
+/* speaker section start  */
 
 .speakers-section{
     width: 100%;
@@ -107,7 +120,6 @@ nav.navbar{
 .speaker-grid{
     display:grid;
     grid-template-columns:repeat(2, 1fr);
-    gap:15px;
     justify-content: center;
     
 }
@@ -140,3 +152,113 @@ nav.navbar{
     font-weight: 700;
     margin-bottom: 8px;
 }
+
+/* speaker section end  */
+
+
+
+
+/* pricing section start  */
+.pricing{
+    width: 90%;
+    max-width: 1100px;
+    margin:80px auto;
+}
+
+.pricing h1{
+    text-align: center;
+    margin-bottom: 15px;
+}
+.pricing p{
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.pricing-container{
+    display:flex;
+    justify-content: center;
+    gap:25px;
+    flex-wrap:wrap;
+}
+
+.pricing-card{
+    width: 320px;
+    background: #ebe8e8;
+    border:1px solid blue;
+    border-radius:10px;
+    padding:25px;
+    display: flex;
+    flex-direction:column;
+}
+
+.pricing-card.active{
+    background: #0D1B2A;
+    color:#FFFFFF;
+    border-color:#71717a;
+}
+
+.plan{
+    font-size:12px;
+    font-weight: 600;
+    color:#71717a;
+}
+
+.pricing-card.active .plan {
+    color: #cbd5e1;
+}
+
+.pricing-card h2{
+    font-size:42px;
+    margin-top:10px;
+    color:#0f172a;
+}
+
+.pricing-card.active h2{
+    color:#fff;
+}
+
+.price-text{
+    font-size:14px;
+    color: #71717a;
+    margin-bottom: 25px;
+}
+
+.pricing-card.active .price-text{
+    color:#d1d5db;
+
+}
+
+.pricing-card ul li{
+    margin-bottom:15px;
+    font-size: 14px;
+    color:#4b5563;
+    position:relative;
+    padding-left:20px;
+}
+
+.pricing-card.active ul li {
+    color: #f1f5f9;
+}
+
+.pricing-card.active ul li ::before{
+    color:#60a5fa;
+}
+
+.pricing-btn{
+    width: 100%;
+    padding:10px;
+    margin-top:25px;
+    border:1px solid #2563eb;
+    background:#fff;
+    color: #2563eb;
+    cursor:pointer;
+    font-weight: 600;
+}
+
+.pricing-card.active .pricing-btn{
+    background:#2563eb;
+    color:#fff;
+    border:none;
+}
+
+/* pricing section end  */
