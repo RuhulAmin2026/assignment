@@ -184,7 +184,6 @@ nav.navbar{
 .pricing-card{
     width: 320px;
     background: #ebe8e8;
-    border:1px solid blue;
     border-radius:10px;
     padding:25px;
     display: flex;
@@ -218,15 +217,19 @@ nav.navbar{
 }
 
 .price-text{
+    text-align: left !important;
     font-size:14px;
     color: #71717a;
     margin-bottom: 25px;
+    
 }
 
 .pricing-card.active .price-text{
     color:#d1d5db;
 
 }
+
+
 
 .pricing-card ul li{
     margin-bottom:15px;
@@ -240,9 +243,16 @@ nav.navbar{
     color: #f1f5f9;
 }
 
-.pricing-card.active ul li ::before{
-    color:#60a5fa;
+.pricing-card ul {
+    list-style: none;
 }
+
+.pricing-card ul li::before {
+    content: "✔";
+    margin-right: 10px;
+     color: #60a5fa;
+}
+
 
 .pricing-btn{
     width: 100%;
@@ -262,3 +272,99 @@ nav.navbar{
 }
 
 /* pricing section end  */
+
+
+
+
+/* missing /countdown section start  */
+
+.some-missing{
+background: yellowgreen;
+text-align: center;
+color:#332b2f
+}
+
+.countdown-section{
+    width:100%
+    height :fit-content;
+    padding : 90px 20px;
+    background:linear-gradient(135deg,#1D4ED8,#2563EB,#3B82F6);
+}
+
+.countdown-container{
+    max-width: 1100px;
+    margin:auto;
+    text-align:center;
+}
+
+.countdown-container h2{
+    font-size:3rem;
+    color:#fff;
+    font-weight:700;
+}
+
+.countdown-container p{
+    font-size:1.25rem;
+    color:yellow;
+    font-weight: 600;
+    margin-bottom: 50px;
+}
+
+.countdown-subtitle{
+    color:#E5E7EB;
+    font-size:18px;
+    width:70%
+    margin : 0 auto 55px;
+    line-height : 1.7;
+}
+
+.countdown{ 
+    display:flex;
+    justify-content: center;
+    gap:50px;
+    flex-wrap:wrap;
+}
+
+.time-box{
+    width: 120px;
+    background: #fff;
+    border-radius:15px;
+    padding: 10px 20px;
+    box-shadow:0 15px 35px rgba(0,0,0,0.15)
+    transition:.3s;
+}
+
+.time-box:hover{
+    transform:translateY(-10px);
+}
+
+.time-box h3{
+    font-size:60px;
+    color:#1D4ED8;
+    margin-bottom:15px;
+}
+
+.time-box p{
+    font-size:1rem;
+    font-weight:600;
+    color:#555;
+}
+
+.register-btn{
+    display:inline-block;
+    margin-top:55px;
+    background: #fff;
+    color:#1D4ED8;
+    padding:16px 40px;
+    border-radius:10px;
+    text-decoration:none;
+    font-size:1.25rem;
+    font-weight:700;
+    transition:0.3s;
+}
+
+.register-btn:hover{
+    background: pink;
+    color:red;
+}
+
