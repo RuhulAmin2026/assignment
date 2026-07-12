@@ -52,3 +52,39 @@ nav.navbar{
     font-weight:600;
     
 }
+
+
+.hero{
+    min-height:700px;
+    background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0, 0, 0, 0.4)), url(./assets/banner.jpg);
+    background-size: cover;
+    background-position: center;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    text-align:center;
+    color:white;
+    padding:40px 20px;
+
+
+}
+
+.hero-content{
+    max-width:600px;
+    display:flex;
+    flex-direction: column;
+    gap:30px;
+}
+
+.hero-text h1{
+    font-size:3rem;
+     font-family: "Open Sans", sans-serif;
+     margin-bottom:20px;
+
+
+}
+
+.hero-btn{
+    padding:12px 25px;
+    font-size:18px;
+}
