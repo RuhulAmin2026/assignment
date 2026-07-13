@@ -80,7 +80,9 @@ nav.navbar{
     max-width:600px;
     display:flex;
     flex-direction: column;
-    gap:30px;
+    gap:250px;
+    height: 100%;
+    
 }
 
 .hero-text h1{
@@ -88,13 +90,18 @@ nav.navbar{
      font-family: "Open Sans", sans-serif;
      margin-bottom:20px;
 
-
+.hero-text{
+   
+}
 }
 
 .hero-btn{
+    
     padding:12px 25px;
     font-size:18px;
+    
 }
+
 
 /* hero section end  */
 
